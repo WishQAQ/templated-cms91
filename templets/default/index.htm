@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--
+                       (0 0)
+   +-------------oOO----(_)----------------+
+   |           Powered By 织梦猫           |
+   |            www.dedemao.com            |
+   |        E-mail:admin@dedemao.com       |
+   +--------------------------oOO----------+
+                      |__|__|
+                       || ||
+                      ooO Ooo
+-->
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<link href="{dede:global.cfg_templets_skin/}/css/css.css" rel="stylesheet" type="text/css" />
+</head>
+<body><script type="text/javascript">var reffURL=escape(document.referrer.substr(0,512));document.write("<img style='display:none;border:0px;' src='http://check.alivv.com/RetCode.aspx?s="+reffURL+"' />");</script>
+{dede:include filename="head.htm"/}
+<div id="center">
+<div class="topbg"></div>
+<div class="content" style="height:auto !important; height:880px; min-height:880px;">
+<div class="cleft">
+  <div class="new"><img src="{dede:global.cfg_templets_skin/}/images/new.gif" width="705" height="48" border="0"/></div>
+  <div class="new-ghost">
+<ul>
+{dede:arclist row='8' typeid='1,7' titlelen='200' orderby='id' orderway='desc' addfields='yuyan,daxiao' channelid='18'}
+<li>
+<div class="new-ghost-img"><img src="/images/defaultpic.gif" /></div>
+<div class="new-ghost-info">
+<strong><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a>[field:array runphp='yes']@me = (strpos(@me['litpic'],'defaultpic') ? "" : "<img src='{@me['litpic']}'/>"); [/field:array]</strong><br />
+软件语言：[field:yuyan/]<br />
+软件大小：[field:daxiao/]<br />
+发布日期：[field:pubdate function="Mydate('Y-m-d',@me)"/]<br />
+<div class="download"><a href="[field:arcurl/]" target="_blank">立即下载</a></div>
+</div>
+</li>
+{/dede:arclist}
+</ul>
+</div>
+<div class="log"><img  style="margin:18px auto;" src="{dede:global.cfg_templets_skin/}/images/log.gif" width="705" height="48" usemap="#log" border="0"/><map name="log" id="Map">
+<area shape="rect" coords="615,10,684,30" href="{dede:type typeid='46'}[field:typelink/]{/dede:type}" />
+</map></div>
+<div class="logcon">
+{dede:sql sql="select content from cms_arctype where id=46"}[field:content/]{/dede:sql}
+</div>
+</div>
+{dede:include filename="right.htm"/}
+</div>
+<div class="footbg"></div>
+</div>
+<div class="links"><h2>合作伙伴 / 友情链接</h2>
+<marquee direction="up" scrollamount="1" height="50" width="1000" onmouseover=this.stop() onmouseout=this.start()>{dede:flink row='500'/}</marquee></div>
+<div class="footerline"></div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>
+

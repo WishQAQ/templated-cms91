@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}</title>
+<meta name="keywords" content="{dede:field.keywords /}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/css/css.css" rel="stylesheet" type="text/css" />
+<script src="http://pstatic.xunlei.com/js/webThunderDetect.js"></script>
+<script src="http://pstatic.xunlei.com/js/base64.js"></script>
+<script src="http://pstatic.xunlei.com/js/offlineThunderDetect.js"></script>
+<style type="text/css">
+<!--
+.STYLE1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.STYLE2 {color: #FF0000}
+.STYLE3 {color: #000000}
+-->
+</style>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div id="center">
+<div class="topbg"></div>
+<div class="content">
+<div class="h1-line"><strong>{dede:field.title/}</strong></div>
+<div class="line"></div>
+<div class="ghost-info">
+<div class="ghost-info-img"><img src="/images/defaultpic.gif" width="139px" height="180"/></div>
+<div class="ghost-info-text">
+软件语言：{dede:field.yuyan/}<br />
+软件大小：{dede:field.daxiao/} <br />
+适用环境：{dede:field.huanjing/}<br />
+发布时间：{dede:field.pubdate function="Mydate('Y年m月d日',@me)"/}<br />
+<Strong>MD5校检:<span class="STYLE1">{dede:field.md5xy/}</span></Strong><br />
+<div class="dx"></div>
+<script language="javascript">
+var thunder_url = "{dede:field.xldx/}";
+var thunder_pid = "85645";
+var restitle = "[迅雷]电信下载";
+document.write('<a href="javascript:;" thunderHref="' + ThunderEncode(thunder_url) + '" thunderPid="' + thunder_pid + '" thunderResTitle="' + restitle + '" onClick="return OnDownloadClick_Simple(this,2,4)" oncontextmenu="ThunderNetwork_SetHref(this)">[迅雷]电信下载</a>');
+</script>&nbsp;
+<script language="javascript">
+    var offlineUrl = "{dede:field.xxlhy/}";
+    var thunder_pid = "85645";
+    document.write('<a href="http://lixian.vip.xunlei.com/lixian_login.html?referfrom=union&ucid='+thunder_pid+'&furl='+encodeURIComponent(ThunderEncode(offlineUrl)) +'" target=_blank>电信'+_xlOffLineName5+'</a>');
+</script>
+&nbsp;　<a href="{dede:field.dx1/}">电信下载①</a>&nbsp;　<a href="{dede:field.dx2/}">电信下载2</a><br />
+<div class="wt"></div><script language="javascript">
+var thunder_url = "{dede:field.xlwt/}";
+var thunder_pid = "85645";
+var restitle = "[迅雷]网通下载";
+document.write('<a href="javascript:;" thunderHref="' + ThunderEncode(thunder_url) + '" thunderPid="' + thunder_pid + '" thunderResTitle="' + restitle + '" onClick="return OnDownloadClick_Simple(this,2,4)" oncontextmenu="ThunderNetwork_SetHref(this)">[迅雷]网通下载</a>');
+</script>&nbsp;
+<script language="javascript">
+    var offlineUrl = "{dede:field.wtxlhy/}";
+    var thunder_pid = "85645";
+    document.write('<a href="http://lixian.vip.xunlei.com/lixian_login.html?referfrom=union&ucid='+thunder_pid+'&furl='+encodeURIComponent(ThunderEncode(offlineUrl)) +'" target=_blank>网通'+_xlOffLineName5+'</a>');
+</script>
+&nbsp;　<a href="{dede:field.wt1/}">网通下载①</a>&nbsp;　<a href="{dede:field.wt2/}">网通下载2</a><br />
+</div>
+</div>
+<div class="line"></div>
+<div class="h1-line" style="margin-top:5px"><div class="zoom"></div>
+  <strong>{dede:field.title/} 安装步骤：</strong></div>
+<div class="ghost-soimg">
+{dede:field.azbz/}
+</div>
+<div class="ghost-content">
+{dede:field.body/}
+</div>
+<br/>
+</div>
+<div class="footbg"></div>
+</div>
+
+{dede:include filename="footer.htm"/}
+</body>
+</html>
+

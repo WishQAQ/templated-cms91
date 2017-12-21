@@ -1,0 +1,65 @@
+@charset "utf-8";
+*{ margin:0; padding:0; font-family:宋体; font-size:12px; color:#7f7f7f;}
+body{ background:url(../images/bg.jpg) no-repeat top;}
+
+#head{ width:1000px; height:135px; margin:0 auto;}
+#head .logo{ width:230px; height:135px; float:left;}
+#head .logo img{ margin-top:20px;}
+#head .items{ width:770px; height:30px; float:right; margin-top:15px;}
+#head .items a{ font-family:微软雅黑; font-size:13px; color:#62bd00; text-decoration:none; float:right; margin-left:15px;}
+#head .items a:hover{ color:#fe020e; text-decoration:none;}
+#head .menu{ width:770px; height:40px; float:right; padding-top:30px;}
+#head .menu ul li{ list-style:none; float:right; width:130px; text-align:center;}
+#head .menu ul li a{font-family:微软雅黑; font-size:18px; color:#62bd00; font-weight:bold; text-decoration:none;}
+#head .menu ul li a:hover{ color:#fe020e; text-decoration:none;}
+
+#center{ width:1008px; margin:0 auto; height:auto !important; height:35px; min-height:35px; overflow:visible;}
+#center .topbg{ width:1008px; margin:0 auto; height:15px; background:url(../images/topbg.gif) no-repeat top;}
+#center .content{ width:1008px; margin:0 auto; background:url(../images/contentbg.gif) repeat-y top; height:auto !important; height:750px; min-height:750px; overflow:visible;}
+#center .content .cleft{ width:700px; float:left;margin-left:15px !important;  margin-left:8px; height:auto !important; height:35px; min-height:35px; overflow:visible;}
+.new-ghost {float:left;width:690px;margin-top:5px; margin-left:8px;}
+.new-ghost ul li {float:left;width:340px;margin:0 5px 5px 0; height:130px;border-bottom:1px #ccc dashed; margin-top:10px; list-style:none; }
+.new-ghost-img {width:95px;height:120px;float:left;}
+.new-ghost-info {float:left;margin-left:0px;line-height:22px;}
+.new-ghost-info a{font-weight:bold;font-size:13px;color:#333; text-decoration:none; display:block; width:auto !important; max-width:218px;float:left; height:22px; white-space:nowrap; overflow:hidden;}
+.new-ghost-info a:hover{font-weight:bold;font-size:13px;color:#F00; text-decoration:none;}
+.new-ghost-info img{height:11px; width:27px; display:block; float:left; margin-top:5px;}
+.download,.dx,.wt{width:87px;height:27px;background:url('../images/download.gif') no-repeat;float:left;}
+.download a,.dx a,.wt a{width:87px;height:27px;display:block;text-indent:-9999px;}
+.dx {background:url('../images/dx.gif') no-repeat;margin-right:5px;}
+.wt {background:url('../images/wt.gif') no-repeat;margin-right:5px;}
+#center .content .cleft .logcon{ width:680px; height:140px; margin:0 auto; overflow:hidden; line-height:20px; color:#939393;}
+#center .content .cright{ width:260px; height:720px; float:right; margin-top:10px; margin-bottom:10px; margin-right:15px !important;  margin-right:8px; background-color:#FFF; border:2px solid #CCC;}
+#center .content .cright ul{ width:200px; list-style:none; margin:10px auto; overflow:hidden;}
+#center .content .cright ul li{ width:200px; height:20px; line-height:20px; margin-top:10px; background:url(../images/jtou.gif) no-repeat; text-indent:24px; overflow:hidden;}
+#center .content .cright ul li a{ color:#939393;}
+#center .content .cright ul li a:hover{ color:#FD9A01;}
+#center .footbg{ width:1008px; margin:0 auto; height:16px; background:url(../images/footbg.gif) no-repeat top;}
+
+#footer{ width:1000px; height:120px; clear:both; margin:0 auto;  overflow:hidden;}
+#footer .flogo{ width:200px; height:120px; float:left; padding-top:10px;}
+#footer .copyright{ width: 780px; height:120px; font-family:微软雅黑; font-size:12px; color:#9f9fa3; font-weight:bold; line-height:20px; float:right; padding-top:10px; line-height:20px;}
+
+.anpager{ width:600px; height:48px; margin:0px auto; float:left; padding-top:50px; padding-bottom:5px;}
+.anpager .cpb { background:#1F3A87 none repeat scroll 0 0;border:1px solid #CCCCCC;color:#FFFFFF;font-weight:bold;margin:5px 4px 0 0;padding:2px 5px 2px;}
+.anpager a {background:#FFFFFF none repeat scroll 0 0;border:1px solid #CCCCCC;color:#1F3A87;margin:5px 4px 0 0;padding:3px 10px 3px;text-decoration:none}
+.anpager a:hover{background:#1F3A87 none repeat scroll 0 0;border:1px solid #1F3A87;color:#FFFFFF;}
+
+.h1-line {width:950px;height:20px;padding-top:5px;margin-top:20px;font-size:13px;font-weight:normal; margin:0 auto;}
+.line {width:950px;;height:2px;background:url(../images/line.gif) repeat-x; margin:0 auto;}
+
+.ghost-info { clear:both; margin:0 auto; width:920px;height:200px; margin-top:20px; margin-bottom:20px;}
+.ghost-info-img {float:left;width:146px;height:179px;margin:10px 0;}
+.ghost-info-text {float:left;margin-left:55px;line-height:28px;font-size:14px;}
+.ghost-info a:link,
+.ghost-info a:visited {color:#333;text-decoration:underline;}
+.ghost-info a:hover {color:#0066cc;}
+
+.zoom {width:113px;height:14px;background:url('../images/zoom.gif') no-repeat;float:right;margin-right:150px}
+
+.ghost-soimg { margin:0 auto;width:950px;margin-top:10px; height:80px;}
+.ghost-soimg ul li {float:left;width:80px;height:60px;border:1px #ccc solid;background:#fff;margin-right:10px;overflow:hidden;text-align:center;}
+
+.ghost-content { clear:both; margin:0 auto; width:920px; border:2px #ccc solid;background:#fff; padding:15px; font-size:14px;color:#666;line-height:20px;}
+.ghost-content #line {width:98%;float:left;margin:10px auto;height:1px;overflow:hidden;border-top:1px #ccc dashed;}
+.ghost-content font {font-size:14px;}

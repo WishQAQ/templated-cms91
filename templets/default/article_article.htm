@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}</title>
+<meta name="keywords" content="{dede:field.keywords /}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/css/css.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div id="center">
+<div class="topbg"></div>
+<div class="content">
+<div class="cleft">
+  <div class="new"><img src="{dede:global.cfg_templets_skin/}/images/helptitle.gif" width="705" height="48" border="0"/></div>
+  <div class="ad"><a href="#"></a></div>
+<div class="ghost-content2" style="height:auto !important; height:653px; min-height:653px; overflow:visible;">
+<div class="newstitle">{dede:field.title/}</div>
+<div class="info">作者：{dede:field.writer/} 文章来源：{dede:field.source/} 发布时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</div>
+{dede:field.body/}
+<div class="context"><div style="width:290px;height:30px;float:left;white-space:nowrap; overflow:hidden;"> {dede:prenext get='pre'/}</div><div style="width:290px;height:30px;float:right;white-space:nowrap; overflow:hidden;"> {dede:prenext get='next'/}</div></div>
+</div>
+</div>
+{dede:include filename="right.htm"/}
+</div>
+<div class="footbg"></div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>
+
